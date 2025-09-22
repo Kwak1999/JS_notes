@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="module" defer src="./main.js"></script>
+    <!--    양식과 포커스 이벤트    -->
+    <style>
+        form {
+            padding: 10px;
+            border: 4px solid transparent;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        form.active {
+            border-color: orange;
+        }
+    </style>
+</head>
+<!--    양식과 포커스 이벤트 -->
+<body>
+<form>
+    <input type="text" placeholder="ID" />
+    <input type="password" placeholder="PW" />
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+</form>
+</body>
+</html>
