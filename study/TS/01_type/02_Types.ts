@@ -2,13 +2,13 @@
 
 /// Any -> 아무 타입이나 허용됨 (비추천: 타입스크립트의 장점 상실)
 // 컴파일러가 타입 검사 안 함, JS처럼 사용됨
-let hello: any = 'hello world'
-hello = 123            // 숫자도 가능
-hello = false          // 불리언도 가능
-hello = null           // null도 가능
-hello = {}             // 객체도 가능
-hello = []             // 배열도 가능
-hello = function () {} // 함수도 가능
+// let hello: any = 'hello world'
+// hello = 123            // 숫자도 가능
+// hello = false          // 불리언도 가능
+// hello = null           // null도 가능
+// hello = {}             // 객체도 가능
+// hello = []             // 배열도 가능
+// hello = function () {} // 함수도 가능
 
 /// Unknown -> 타입을 알 수 없는 경우에 사용 (any보다 안전)
 // 실제 사용 전에는 타입 체크 필요
@@ -61,10 +61,10 @@ function error(): never {
 // --------------------------------------------------
 
 /// Union -> 여러 타입 중 하나 허용
-let union: (string | number | boolean)[]
-union = 'hello type' // string 가능
-union = 123          // number 가능
-union = false        // boolean 가능
+// let union: (string | number | boolean)[]
+// union = 'hello type' // string 가능
+// union = 123          // number 가능
+// union = false        // boolean 가능
 
 // 여러 타입이 허용될 경우 조건문으로 타입 좁히기 필요
 

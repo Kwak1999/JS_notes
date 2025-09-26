@@ -8,7 +8,7 @@ let myColor: string = `My color is ${red}.`
 let yourColor: string = 'Your color is' + green
 
 /// 숫자
-let num: number
+// let num: number
 let integer: number = 6
 let float: number = 3.14
 let infinity: number = Infinity

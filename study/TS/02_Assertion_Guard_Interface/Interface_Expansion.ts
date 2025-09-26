@@ -10,11 +10,11 @@ interface UserB extends UserA{
     isValid: boolean
 }
 
-const heropy: UserA ={
-    name: 'heropy',
-    age: 12,
-    isValid: true // <- 부모요소는 isValid가 없어서 오류
-}
+// const heropy: UserA ={
+//     name: 'heropy',
+//     age: 12,
+//     isValid: true // <- 부모요소는 isValid가 없어서 오류
+// }
 
 const neo: UserB = {
     name: 'Neo',

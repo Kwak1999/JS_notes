@@ -54,21 +54,21 @@ function logValues(payload: Payload) {
     }
 }
 
-interface User {
-    // User 인터페이스도 문자열 인덱스 시그니처를 가집니다.
-    // 이는 User 객체가 name, age, isValid 외에도 동적으로 추가될 수 있는 다른 속성들을 가질 수 있음을 허용합니다.
-    [key: string]: unknown
-    name: string // User는 반드시 name 속성을 문자열로 가져야 합니다.
-    age: number // User는 반드시 age 속성을 숫자로 가져야 합니다.
-    isValid: boolean // User는 반드시 isValid 속성을 불리언으로 가져야 합니다.
-}
+// interface User {
+//     // User 인터페이스도 문자열 인덱스 시그니처를 가집니다.
+//     // 이는 User 객체가 name, age, isValid 외에도 동적으로 추가될 수 있는 다른 속성들을 가질 수 있음을 허용합니다.
+//     [key: string]: unknown
+//     name: string // User는 반드시 name 속성을 문자열로 가져야 합니다.
+//     age: number // User는 반드시 age 속성을 숫자로 가져야 합니다.
+//     isValid: boolean // User는 반드시 isValid 속성을 불리언으로 가져야 합니다.
+// }
 
-// User 인터페이스를 만족하는 heropy 객체를 선언하고 초기화합니다.
-const heropy: User = {
-    name: 'Heropy',
-    age: 85,
-    isValid: true
-}
+// // User 인터페이스를 만족하는 heropy 객체를 선언하고 초기화합니다.
+// const heropy: User = {
+//     name: 'Heropy',
+//     age: 85,
+//     isValid: true
+// }
 
 // logValues 함수를 호출하여 heropy 객체를 전달합니다.
 // heropy 객체는 User 타입이며, User 타입은 Payload 타입의 인덱스 시그니처 ([key: string]: unknown)와 호환되므로,
